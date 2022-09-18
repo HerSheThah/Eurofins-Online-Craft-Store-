@@ -20,11 +20,12 @@ namespace MyOnlineCraftWeb.Models
 
         public string productDescription { get; set; }
 
-        public int quantity { get; set; } = 0;
-        public float ActualPrice { get; set; }
-        public float DiscountPrice { get; set; }
+       
+        public int discountPercent { get; set; }
+        public Double ActualPrice { get; set; }
+        public Double DiscountPrice { get; set; }
 
-        [DisplayName("Upload Image")]
+        [DisplayName("Image")]
         [ValidateNever]
         public string imageURL { get; set; }
 

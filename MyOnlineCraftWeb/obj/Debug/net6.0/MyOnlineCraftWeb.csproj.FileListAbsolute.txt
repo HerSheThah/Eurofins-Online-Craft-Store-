@@ -522,3 +522,11 @@ C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\obj\Debu
 C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\bin\Debug\net6.0\Microsoft.Build.dll
 C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\bin\Debug\net6.0\Microsoft.Build.Framework.dll
 C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
+C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Eurofins training\vs code\MyOnlineCraftStore - Copy\MyOnlineCraftWeb\obj\Debug\net6.0\MyOnlineCraftWeb.MvcApplicationPartsAssemblyInfo.cs

@@ -16,16 +16,19 @@
 							<h1 class="card-title h5 text-primary">@product.productName</h1>
 						</div>
 						<div class="pl-1">
-							<p>DiscountPrice: <b>Rs. @product.DiscountPrice</b></p>
+							<p>DiscountPrice: <b>Rs. @product.DiscountPrice.ToString("c")</b></p>
 						</div>
 						<div class="pl-1">
-							<p>Price: <strike><b>Rs. @product.ActualPrice</b></strike></p>
+							<p>Price: <strike><b>Rs. @product.ActualPrice.ToString("c")</b></strike></p>
+							<p>@(product.discountPercent)% off</p>
+
 						</div>
+						
 						</div>
 						
 					</div>
 					<div>
-						<a asp-controller="Products" asp-action="Details" class="btn btn-primary form-control" asp-route-id="@product.productId">
+						<a  asp-action="Details" class="btn btn-primary form-control" asp-route-productid="@product.productId">
 							Details
 						</a>
 					</div>

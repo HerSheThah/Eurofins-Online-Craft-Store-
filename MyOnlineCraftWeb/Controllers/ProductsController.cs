@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -27,31 +29,6 @@ namespace MyOnlineCraftWeb.Controllers
         {
             var onlineCraftStoreDbContext = _context.Products.Include(p => p.Category);
             return View(await onlineCraftStoreDbContext.ToListAsync());
-        }
-
-        // GET: Products/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.Products == null)
-            {
-                return NotFound();
-            }
-
-            var product = await _context.Products
-                .Include(p => p.Category)
-                .FirstOrDefaultAsync(m => m.productId == id);
-            
-            if (product == null)
-            {
-                return NotFound();
-            }
-            var cartObj = new Shoppingcart
-            {
-                Product = product,
-                count = 1
-            };
-
-            return View(cartObj);
         }
 
         // GET: Products/Create
@@ -171,7 +148,13 @@ namespace MyOnlineCraftWeb.Controllers
                 DiscountPrice = productVM.Product.DiscountPrice,
                 productCategoryId = productVM.Product.productCategoryId,
                 imageURL = imgName,
+                discountPercent = CalculateDiscount(productVM.Product.DiscountPrice, productVM.Product.ActualPrice)
             };
+        }
+
+        private static int CalculateDiscount(double discountPrice, double actualPrice)
+        {
+            return (int)Convert.ToSingle((actualPrice - discountPrice) / actualPrice * 100);  
         }
 
         // GET: Products/Delete/5

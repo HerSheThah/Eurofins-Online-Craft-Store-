@@ -7,6 +7,7 @@
 
 }
 
+
 <partial name="_Notification"></partial>
 <partial name="_CreateNew" view-data="ViewData">
 
@@ -17,10 +18,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.productName)
             </th>
-            <th>
+           @* <th>
                 @Html.DisplayNameFor(model => model.productDescription)
             </th>
-            
+            *@
             <th>
                 @Html.DisplayNameFor(model => model.ActualPrice)
             </th>
@@ -45,9 +46,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.productName)
             </td>
-            <td>
+           @* <td>
                 @Html.DisplayFor(modelItem => item.productDescription)
-            </td>
+            </td>*@
            
             <td>
                 @Html.DisplayFor(modelItem => item.ActualPrice)

@@ -31,14 +31,17 @@
          <li class="nav-item">
          <a class="nav-link" asp-area="" asp-controller="Category" asp-action="Index">Category</a>
         </li>
-
+         <li class="nav-item">
+         <a class="nav-link" asp-area="" asp-controller="Cart" asp-action="Index"> <i class="bi bi-cart"></i></a>
+        </li>
+       
+@*
          <li class="nav-item">
          <a class="nav-link" asp-area="" asp-controller="Products" asp-action="Index">About Us</a>
         </li>
          <li class="nav-item">
          <a class="nav-link" asp-area="" asp-controller="Products" asp-action="Index">Contact</a>
-        </li>
-       
+        </li>*@
        @* <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
           <div class="dropdown-menu">
@@ -50,10 +53,12 @@
           </div>
         </li>*@
       </ul>
-      <form class="d-flex">
+       <partial name="_LoginPartial"></partial>
+
+    @*  <form class="d-flex">
         <input class="form-control me-sm-2" type="text" placeholder="Search">
         <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      </form>*@
     </div>
   </div>
 </nav>
